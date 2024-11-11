@@ -2,116 +2,204 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bistro Bliss</title>
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/432ea70f4f.js" crossorigin="anonymous"></script>
-    <!-- daisy cdn  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- custom taiwind -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                        'bistro-color': '#414536',
-                        'color-second': '#AD343E',
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- custom css -->
-    <style>
-        .font-display {
-            font-family: "Playfair Display", serif;
-        }
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bistro Bliss</title>
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+		rel="stylesheet">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/432ea70f4f.js" crossorigin="anonymous"></script>
+	<!-- daisy cdn  -->
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- custom taiwind -->
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						clifford: '#da373d',
+						'bistro-color': '#414536',
+						'color-second': '#AD343E',
+					}
+				}
+			}
+		}
+	</script>
+	<!-- custom css -->
+	<style>
+		.font-display {
+			font-family: "Playfair Display", serif;
+		}
 
-        .font-dm {
-            font-family: "DM Sans", serif;
-        }
-    </style>
+		.font-dm {
+			font-family: "DM Sans", serif;
+		}
+	</style>
 
 </head>
 
 <body>
-    <header>
-        <nav class="container mx-auto mt-6">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-dm">
-                            <li class="bg-[#DBDFD0] rounded-3xl px-2"><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <a class="btn text-3xl font-semibold text-[#474747] btn-ghost md:text-4xl font-display italic "><img
-                            src="images/icons/logo.png" alt="">Bistro <br class="sm:hidden">
-                        Bliss</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 text-base font-dm text-[#2C2F24] font-medium">
-                        <li class="bg-[#DBDFD0] rounded-3xl px-2"><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    <a
-                        class="cursor-pointer font-dm font-bold text-base text-black border-2 border-black rounded-full px-2 py-2 md:px-6 md:py-3">Book
-                        A Table</a>
-                </div>
-            </div>
-        </nav>
-        <!-- banner -->
-        <section class="mt-6">
-            <div>
-                <div class="hero h-[700px] md:h-[950px] w-full" style="background-image: url('images/banner.jpg');">
-                    <div class="hero-content  text-center">
-                        <div class="md:max-w-2xl text-[#2C2F24]">
-                            <h1 class="mb-8 font-normal font-display text-6xl md:text-8xl">Best food for
-                                your taste</h1>
-                            <p class="mb-10 font-dm text-xl font-normal"> Discover delectable cuisine and unforgettable
-                                moments <br class="hidden md:block">
-                                in our welcoming,
-                                haven.
-                            </p>
-                            <button class=" mr-4 text-base font-bold font-dm bg-color-second text-white rounded-full px-3 py-3 md:px-8 md:py-5">Book A Table</button>
-                            <button class="font-dm cursor-pointer font-dm font-bold text-base text-black border-2 border-black rounded-full px-3 py-3 md:px-8 md:py-5">Explore Menu</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </header>
-    <main>
+	<header>
+		<nav class="container mx-auto mt-6">
+			<div class="navbar bg-base-100">
+				<div class="navbar-start">
+					<div class="dropdown">
+						<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+								stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+									d="M4 6h16M4 12h8m-8 6h16" />
+							</svg>
+						</div>
+						<ul tabindex="0"
+							class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-dm">
+							<li class="bg-[#DBDFD0] rounded-3xl px-2"><a href="#">Home</a>
+							</li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Menu</a></li>
+							<li><a href="#">Pages</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					<a class="btn text-3xl font-semibold text-[#474747] btn-ghost md:text-4xl font-display italic "><img
+							src="images/icons/logo.png" alt="">Bistro <br class="sm:hidden">
+						Bliss</a>
+				</div>
+				<div class="navbar-center hidden lg:flex">
+					<ul class="menu menu-horizontal px-1 text-base font-dm text-[#2C2F24] font-medium">
+						<li class="bg-[#DBDFD0] rounded-3xl px-2"><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Menu</a></li>
+						<li><a href="#">Pages</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="navbar-end">
+					<a
+						class="cursor-pointer font-dm font-bold text-base text-black border-2 border-black rounded-full px-2 py-2 md:px-6 md:py-3">Book
+						A Table</a>
+				</div>
+			</div>
+		</nav>
+		<!-- banner -->
+		<section class="mt-6">
+			<div>
+				<div class="hero h-[700px] md:h-[950px] w-full" style="background-image: url('images/banner.jpg');">
+					<div class="hero-content selection:text-red-500  text-center">
+						<div class="md:max-w-2xl text-[#2C2F24]">
+							<h1 class="mb-8 font-normal font-display text-6xl md:text-8xl">
+								Best <span class="text-red-500">food for</span>
+								your taste</h1>
+							<p class="mb-10 font-dm text-xl font-normal"> Discover
+								delectable cuisine and unforgettable
+								moments <br class="hidden md:block">
+								in our welcoming,
+								haven.
+							</p>
+							<button
+								class=" mr-4 text-base font-bold font-dm bg-color-second text-white rounded-full px-3 py-3 md:px-8 md:py-5">Book
+								A Table</button>
+							<button
+								class="font-dm cursor-pointer font-dm font-bold text-base text-black border-2 border-black rounded-full px-3 py-3 md:px-8 md:py-5">Explore
+								Menu</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</header>
+	<main>
+		<!-- browse menu section  -->
+		<section class="my-28 container mx-auto">
+			<h1 class="font-display font-medium text-6xl text-center mb-16">Browse Our Menu</h1>
+			<div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+				<div class="card rounded-xl  border-2 border-[#DBDFD0] font-dm">
+					<figure class="px-10 pt-10">
+						<img src="images/icons/tea-orgin.png" alt="Shoes" />
+					</figure>
+					<div class="card-body items-center text-center">
+						<h2 class="text-2xl font-bold">Breakfast</h2>
+						<p class="font-normal text-base text-bistro-color">In the new era of technology we look in the
+							future with certainty and pride for our life.</p>
+						<div class="card-actions">
+							<button class="text-color-second text-base font-bold">Explore Menu</button>
+						</div>
+					</div>
+				</div>
+				<div class="card rounded-xl  border-2 border-[#DBDFD0] font-dm">
+					<figure class="px-10 pt-10">
+						<img src="images/icons/rice.png" alt="Shoes" />
+					</figure>
+					<div class="card-body items-center text-center">
+						<h2 class="text-2xl font-bold">Main Dishes</h2>
+						<p class="font-normal text-base text-bistro-color">In the new era of technology we look in the
+							future with certainty and pride for our life.</p>
+						<div class="card-actions">
+							<button class="text-color-second text-base font-bold">Explore Menu</button>
+						</div>
+					</div>
+				</div>
+				<div class="card rounded-xl  border-2 border-[#DBDFD0] font-dm">
+					<figure class="px-10 pt-10">
+						<img src="images/icons/drink.png" alt="Shoes" />
+					</figure>
+					<div class="card-body items-center text-center">
+						<h2 class="text-2xl font-bold">Breakfast</h2>
+						<p class="font-normal text-base text-bistro-color">In the new era of technology we look in the
+							future with certainty and pride for our life.</p>
+						<div class="card-actions">
+							<button class="text-color-second text-base font-bold">Explore Menu</button>
+						</div>
+					</div>
+				</div>
+				<div class="card rounded-xl  border-2 border-[#DBDFD0] font-dm">
+					<figure class="px-10 pt-10">
+						<img src="images/icons/dessert.png" alt="Shoes" />
+					</figure>
+					<div class="card-body items-center text-center">
+						<h2 class="text-2xl font-bold">Breakfast</h2>
+						<p class="font-normal text-base text-bistro-color">In the new era of technology we look in the
+							future with certainty and pride for our life.</p>
+						<div class="card-actions">
+							<button class="text-color-second text-base font-bold">Explore Menu</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- healthy food section -->
+		<section class="bg-[#F9F9F7] px-10 md:px-32 py-28">
+			<div class="container mx-auto">
+				<div>
+					<div>
+						<img src="images/shwarma.png" alt="" class="rounded-lg w-full">
+					</div>
+					<div
+						class="bg-[#474747] rounded-xl p-8 md:p-12 font-dm inline-block text-white relative left-32 md:left-64 -top-64">
+						<h3 class="text-2xl font-bold mb-10">Come and visit us</h3>
+						<h4 class="text-base font-normal font-dm mb-6"><i class="fa-solid fa-phone mr-5"></i>(414) 857 -
+							0107
+						</h4>
+						<h4 class="text-base font-normal font-dm mb-6"><i
+								class="fa-regular fa-envelope mr-5"></i>happytummy@restaurant.com</h4>
+						<h4 class="text-base font-normal font-dm"><i class="fa-solid fa-location-dot mr-5"></i>837 W.
+							Marshall Lane Marshalltown, <br> IA 50158, Los Angeles</h4>
+					</div>
+				</div>
+				<div>
+					<h1 class="font-display font-medium text-6xl text-center">We provide healthy food for your family.</h1>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
 
-    </main>
-    <footer>
-
-    </footer>
+	</footer>
 </body>
 
 </html>
